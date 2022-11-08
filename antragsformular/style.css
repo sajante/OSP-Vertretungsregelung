@@ -78,3 +78,31 @@ tr:nth-of-type(odd) {
     transform: translateY(4px);
     color:#fff;
 }
+
+.btnCancel {
+    background-color: #f45151;
+    border: 0;
+    padding: 1rem;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 6px 6px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+    margin-right: 5px;
+}
+
+.btnCancel:hover {
+    background-color: #be3f3f;
+    color:#fff;
+}
+
+.btnCancel:active {
+    background-color: #be3f3f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    color:#fff;
+}
+
+#datepicker {
+    border-radius: 7px;
+}
