@@ -22,7 +22,6 @@
 <input type="checkbox" id="reasonFive" name="sonstiges" value="sonstiges">
 <label for="reasonOne">Sonstiges:</label>
 <input type="text" name="otherReason" value="" class="otherReasonField">
-<h4>(Nachweis bitte als Anlage beifügen)</h4>
 <h2>Vertretungsvorschlag</h2>
 <form action="/action_page.php">
     <input type="date" id="datepicker" name="datepicker">
@@ -153,7 +152,7 @@
     </table>
 </div>
 <h4>Bitte rechtzeitig im Sekretariat abgeben - möglichst 1 Woche vor dem Vertretungsfall!</h4>
-<button onclick="sendForm()" class="btnSubmit">Senden</button>
-<button onclick="cancelForm()" class="btnCancel">Abbrechen</button>
+<button onclick="createPDF();sendForm();" class="btnSubmit">Senden</button>
+<button onclick="self.location.href= 'http://0.0.0.0:8080/%C3%9Cbersichtsseite/landingpage.php'" class="btnCancel">Abbrechen</button>
 </body>
 </html>

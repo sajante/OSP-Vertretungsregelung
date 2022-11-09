@@ -22,7 +22,7 @@
     <div class="button-group">
         <button type="btn-agree"><i class="fa fa-check"></i> Antrag genehmigen</button>
         <button type="btn-disagree"><i class="fa fa-close"></i> Antrag ablehnen</button>
-        <button type="btn-add"><i class="fa fa-plus"></i> neuer Antrag</button>
+        <button onclick="self.location.href= 'http://0.0.0.0:8080/Antragsformular/antrag.php'" type="btn-add"><i class="fa fa-plus"></i> neuer Antrag</button>
         <input type ="text" id="search"  placeholder="Suche..." style="box-shadow: 2px 2px #5b9bd5;background-color: #eee;border-radius: 6px; margin-left: 15px;">
     </div>
 
