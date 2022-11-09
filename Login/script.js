@@ -1,4 +1,4 @@
-function login(){
+function msg(){
     let uname = document.getElementById('username');
     let pwd = document.getElementById('password');
 
@@ -15,3 +15,4 @@ function login(){
         	alert("Geben Sie Ihr Passwort ein");
 		}
 }
+
