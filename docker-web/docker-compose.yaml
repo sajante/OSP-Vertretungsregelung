@@ -1,0 +1,25 @@
+# First, indicate the version of Docker compose we want to use
+version: '3'
+# Create a section for all the services/images we need
+services:
+  # Create a PHP service, call it however you'd like
+  php:
+    # Optionally, choose a container name
+    container_name: "php"
+    # Select the Docker image to use for this service
+    image: "php:8-alpine"
+
+    # Set up to automatically restart in case the container goes down
+    restart: always
+    # Map your local PC port to the container's port, so you can get access to the container this way
+    # Format local:docker
+    ports:
+      - 8080:8080
+    # The command to be run, this command sets up a local PHP development server on port 8080
+    command: php -S 0.0.0.0:8080
+    # Select which files should be copied over to the PHP server
+    volumes:
+      - .:/var/www
+    # Set up hostname and file locations inside the image
+    hostname: "www"
+    working_dir: "/var/www"

@@ -1,0 +1,97 @@
+table {
+    width: 750px;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+.content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 100;
+    text-align: center;
+    color: #5b9bd5;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+th {
+    background: #5b9bd5;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 18px;
+}
+tr:hover{
+    background-color: #9dc6e9;
+;
+;
+;
+
+}
+tr {
+    border: 1px solid #ccc;
+
+}
+
+
+textarea{
+    max-height: 3rem;
+    min-height: 3rem;
+    max-width: 90%;
+    min-width: 90%;
+    resize: none;
+}
+
+button {
+
+    background-color: #5b9bd5;
+    border: 0;
+    padding: 1rem;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+    margin-right: 5px;
+    justify-content: center;
+
+}
+
+button:hover {
+
+    background-color: #0c6aa8dc;
+    color: #fff;
+
+}
+
+button:active {
+
+    background-color: #0c6aa8dc;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    color: #fff;
+
+}
+.search{
+    background-color: #666;
+}
+#search{
+    background-image: url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png'); /* Add a search icon to input */
+    /* background-position: 10px 12px;  Position the search icon */
+    background-repeat: no-repeat;
+}
+.button-group {
+    text-align: center;
+}
