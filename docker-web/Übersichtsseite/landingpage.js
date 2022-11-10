@@ -1,4 +1,3 @@
-
 (function () {
     var showResults;
     $("#search").keyup(function () {
@@ -16,3 +15,7 @@
         };
     });
 }.call(this));
+
+document.getElementById("selectDisAgree").addEventListener("click", function (e) {
+    document.getElementById("sub1").disabled = !e.target.checked;
+});
